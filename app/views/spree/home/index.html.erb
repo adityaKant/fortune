@@ -1,0 +1,21 @@
+<div class="headmain search-header dash-header" style="height: 500px;">
+  <div class="headwrap" style="height: 500px;">
+    <div class="clear"></div>
+  </div>
+</div>
+  <% content_for :sidebar do %>
+    <div data-hook="homepage_sidebar_navigation">
+      <%= render :partial => 'spree/shared/taxonomies' %>
+    </div>
+  <% end %>
+<div class="container">
+  <div class="row">
+    <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
+  </div>
+
+  <div data-hook="homepage_products">
+    <% cache(cache_key_for_products) do %>
+      <%= render :partial => 'spree/shared/products', :locals => { :products => @products } %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+#header.header-four {
+  padding-bottom: 7px;
+}
+#header.header-four {
+  padding-top: 20px;
+  padding-bottom: 12px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(0,0,0,0.5);
+}
+.header-four .logo {
+  padding-top: 5px;
+  display: block;
+  float: left;
+  width: 37.5%;
+}
+.header-four .calling-contact {
+  float: left;
+  padding-left: 23px;
+  border-left: 1px solid #e5e8f1;
+  margin-top: 7px;
+}
+.header-four .calling-contact span {
+  font-size: 12px;
+  color: #868c9e;
+  text-transform: uppercase;
+  display: block;
+  font-family: 'archivo_narrowbold';
+  line-height: 1.5;
+}
+.header-four .navbar {
+  padding-top: 4px;
+}
+.header-four .navbar {
+  border: none;
+  margin-bottom: 0;
+  padding-top: 8px;
+}
+.header-four .navbar-collapse {
+  padding-right: 0;
+}
+.header-four .navbar-nav {
+  padding-left: 39px;
+}
+.header-four .navbar-nav > li > a {
+  padding-top: 9px;
+  padding-bottom: 7px;
+  font-size: 15px;
+  color: #25577C;
+  text-transform: uppercase;
+  font-family: 'archivo_narrowbold';
+}
+.nav li ul.sub-menu {
+  left: 0px;
+  margin: 0;
+  top: 45px;
+  padding: 0;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  padding-top: 20px;
+  list-style: none;
+  width: 152px;
+  z-index: 9;
+}
+#wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+//#sidebar{
+//  display:none;
+//}
+.headmain {
+  width: 100%;
+  position: relative;
+  background: image-url("mbuntu.jpg") no-repeat center top;
+  background-size: cover;
+}
