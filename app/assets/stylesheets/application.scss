@@ -24,7 +24,7 @@
   top: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(0,0,0,0.5);
+  //background: rgba(0,0,0,0.5);
 }
 .header-four .logo {
   padding-top: 5px;
@@ -96,4 +96,13 @@
   position: relative;
   background: image-url("mbuntu.jpg") no-repeat center top;
   background-size: cover;
+}
+.header-trans{
+  background: rgba(0,0,0,0.5);
+}
+#header{
+  -webkit-transition: all 0.5s; // Chrome
+  -moz-transition: all 0.5s; // Mozilla
+  -o-transition: all 0.5s; // Opera
+  transition: all 0.5s;
 }
